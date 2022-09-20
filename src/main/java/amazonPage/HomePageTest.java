@@ -1,7 +1,6 @@
 package amazonPage;
 
 import org.junit.Test;
-
 import BaseUtil02.BaseClass;
 
 public class HomePageTest extends BaseClass {
