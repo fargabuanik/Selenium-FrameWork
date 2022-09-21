@@ -1,11 +1,14 @@
-package amazonPage;
+package testPackage;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 import BaseUtil02.BaseClass;
 
 public class HomePageTest extends BaseClass {
 	@Test
 	public void clickSearchFieldTest() {
-		System.out.println("This is a test");
+   homePage.clickSearchField();
+
+	
 	}
 }

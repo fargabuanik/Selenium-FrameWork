@@ -1,27 +1,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>gov.protal.amazon</groupId>
-  <artifactId>gov.protal.amazon</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>protal.amazon frameWork</name>
-  <description>This a frameWork for amazon website</description>
-  <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.4.0</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.6.1</version>
-</dependency>
-  </dependencies>
-  <build>
-  <plugins>		
+	<modelVersion>4.0.0</modelVersion>
+	<groupId> gov.protal.coms</groupId>
+	<artifactId>  gov.protal.coms</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>protel</name>
+	<description>This project for Famework</description>
+	<!-- pom means project object model -->
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
 			<plugin>
+				<!-- maven-compiler-pligin is used tp compile the maven bulid-->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.10.1</version>
@@ -30,12 +34,12 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin>			
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M7</version>
-			</plugin>			
+			</plugin>
 		</plugins>
-		</build>
+	</build>
 </project>

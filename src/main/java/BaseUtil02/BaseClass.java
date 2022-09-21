@@ -8,14 +8,14 @@ import amazonPage.HomePage;
 
 public class BaseClass {
 	WebDriver driver;
-	HomePage homePage = new HomePage(driver);
+	protected HomePage homePage ;
 
 	@BeforeMethod
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver","/Users/fargabuddin/eclipse-workspace/gov.portal.amazon/driver/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.com/portal");
-
+        homePage= new HomePage(driver);
 	} 
 	@AfterMethod
 	public void tearup() {
